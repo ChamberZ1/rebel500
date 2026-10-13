@@ -1,0 +1,64 @@
+{
+  "assembly": "steering",
+  "model": "CMX500A",
+  "modelYear": 2026,
+  "parts": [
+    {
+      "id": "steering",
+      "name": "Steering",
+      "kind": "assembly",
+      "parentId": "chassis",
+      "description": "The steering stem, the triple clamps (bottom and top bridges) and the head bearings that let the front end turn.",
+      "function": "Connects the fork to the frame's steering head so the front wheel can turn. The 28° rake and 110 mm trail give the bike its stable, easy steering.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "geometryAccuracy": "representative",
+      "facts": [
+        { "label": "Rake (caster angle)", "value": "28°", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" },
+        { "label": "Trail", "value": "4.3 in (110 mm)", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" }
+      ],
+      "keywords": ["steering", "triple clamp", "yoke", "headstock"],
+      "educationId": "steering"
+    },
+    {
+      "id": "steering-stem",
+      "name": "Steering Stem / Bottom Bridge",
+      "kind": "part",
+      "parentId": "steering",
+      "description": "The lower triple clamp with its integral stem, which passes up through the frame's steering head.",
+      "function": "Clamps the lower ends of the fork tubes and rotates on the steering-head bearings.",
+      "verification": "cross-referenced",
+      "sourceId": "revzilla-2026-se-index",
+      "geometryAccuracy": "approximate",
+      "geometryIds": ["geo-steering-stem"],
+      "oem": { "ficheName": "STEERING STEM", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
+      "keywords": ["lower triple clamp", "bottom yoke", "stem"]
+    },
+    {
+      "id": "top-bridge",
+      "name": "Top Bridge",
+      "kind": "part",
+      "parentId": "steering",
+      "description": "The upper triple clamp. The handlebar risers and meter are drawn mounted to it.",
+      "function": "Clamps the tops of the fork tubes, retains the steering stem and carries the handlebar.",
+      "verification": "unverified",
+      "verificationNote": "The Honda diagram name and part number are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "approximate",
+      "geometryIds": ["geo-top-bridge"],
+      "relatedParts": ["handlebar"],
+      "keywords": ["upper triple clamp", "top yoke", "top clamp"]
+    },
+    {
+      "id": "steering-bearings",
+      "name": "Steering Head Bearings",
+      "kind": "part",
+      "parentId": "steering",
+      "description": "Bearings in the top and bottom of the frame's steering head.",
+      "function": "Let the steering turn smoothly with no free play.",
+      "verification": "unverified",
+      "verificationNote": "Bearing type and part numbers are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["head bearing", "steering bearing"]
+    }
+  ]
+}

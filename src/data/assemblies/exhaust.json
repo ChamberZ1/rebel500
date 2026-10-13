@@ -1,0 +1,123 @@
+{
+  "assembly": "exhaust",
+  "model": "CMX500A",
+  "modelYear": 2026,
+  "parts": [
+    {
+      "id": "exhaust-headers",
+      "name": "Exhaust Pipe Assembly (#1)",
+      "kind": "part",
+      "parentId": "exhaust",
+      "description": "One assembly made of two header pipes, one per cylinder, that run down the front of the engine and turn rearward underneath it. There they merge into a large box-shaped chamber, and a single outlet pipe leaves the chamber toward the muffler on the right side. The 3D shape follows the layout in the 2026 diagram but is simplified.",
+      "function": "Carries exhaust gas from both exhaust ports, combines the two flows in the under-engine chamber and feeds them to the muffler. A wired sensor (#14) is fitted to the pipe; what the chamber contains (for example a catalytic converter) is not yet verified for 2026 CMX500A.",
+      "verification": "cross-referenced",
+      "sourceId": "revzilla-2026-abs-muffler",
+      "verificationNote": "Layout read from the 2026 CMX500AAC MUFFLER diagram. Honda's part name and part number are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-exhaust-headers"],
+      "oem": {
+        "ficheName": "MUFFLER",
+        "ficheUrl": "https://www.revzilla.com/oem/honda/2026-honda-rebel-500-abs/muffler?submodel=cmx500aac",
+        "verification": "cross-referenced",
+        "sourceId": "revzilla-2026-abs-muffler",
+        "note": "Diagram item #1. Honda groups the exhaust pipe in the MUFFLER diagram."
+      },
+      "relatedParts": ["muffler", "exhaust-sensor", "cylinder-head-assy"],
+      "keywords": ["header", "exhaust pipe", "downpipe", "collector", "chamber", "pre-muffler", "catalytic converter"],
+      "educationId": "exhaust"
+    },
+    {
+      "id": "exhaust-sensor",
+      "name": "Exhaust Sensor (#14)",
+      "kind": "part",
+      "parentId": "exhaust",
+      "description": "A sensor screwed into the exhaust pipe, with a wire lead and connector (diagram #14, held by clips). Its exact position on the pipe in the 3D view is approximate.",
+      "function": "Probably an oxygen (O₂) sensor: on fuel-injected engines it measures oxygen left in the exhaust so the engine-control unit can fine-tune the fuel mixture. That identification comes from the part's appearance in the diagram, not from Honda's parts list.",
+      "verification": "cross-referenced",
+      "sourceId": "revzilla-2026-abs-muffler",
+      "verificationNote": "Seen in the 2026 MUFFLER diagram. Sensor type, Honda name and part number are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-exhaust-sensor"],
+      "oem": {
+        "ficheName": "MUFFLER",
+        "ficheUrl": "https://www.revzilla.com/oem/honda/2026-honda-rebel-500-abs/muffler?submodel=cmx500aac",
+        "verification": "cross-referenced",
+        "sourceId": "revzilla-2026-abs-muffler",
+        "note": "Diagram item #14."
+      },
+      "relatedParts": ["ecu", "pgm-fi"],
+      "keywords": ["O2 sensor", "oxygen sensor", "lambda", "exhaust sensor"]
+    },
+    {
+      "id": "muffler",
+      "name": "Muffler (#5)",
+      "kind": "part",
+      "parentId": "exhaust",
+      "description": "A long muffler on the right side. It tapers from a narrow inlet at the front to a large body at the rear and bolts to the frame through a bracket on top with rubber mounts. Honda calls it a 'specially designed muffler' that 'emits a pulsating exhaust note.'",
+      "function": "Reduces exhaust noise to legal levels and shapes the exhaust sound. Honda notes California models may differ due to emissions equipment.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-features",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-muffler"],
+      "oem": {
+        "ficheName": "MUFFLER",
+        "ficheUrl": "https://www.revzilla.com/oem/honda/2026-honda-rebel-500-abs/muffler?submodel=cmx500aac",
+        "verification": "cross-referenced",
+        "sourceId": "revzilla-2026-abs-muffler",
+        "note": "Diagram item #5. The part number is not yet verified for 2026 CMX500A."
+      },
+      "relatedParts": ["exhaust-headers", "muffler-cover"],
+      "keywords": ["silencer", "exhaust", "can", "end can"],
+      "educationId": "exhaust"
+    },
+    {
+      "id": "muffler-cover",
+      "name": "Muffler Side Cover (#7)",
+      "kind": "part",
+      "parentId": "exhaust",
+      "description": "A separate tapered cover that screws onto the outer side of the muffler (diagram #7, with its screws).",
+      "function": "Appears to act as a styling cover and heat guard over the outer face of the muffler. Honda's name for it is not yet verified for 2026 CMX500A.",
+      "verification": "cross-referenced",
+      "sourceId": "revzilla-2026-abs-muffler",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-muffler-cover"],
+      "oem": {
+        "ficheName": "MUFFLER",
+        "ficheUrl": "https://www.revzilla.com/oem/honda/2026-honda-rebel-500-abs/muffler?submodel=cmx500aac",
+        "verification": "cross-referenced",
+        "sourceId": "revzilla-2026-abs-muffler",
+        "note": "Diagram item #7."
+      },
+      "relatedParts": ["muffler"],
+      "keywords": ["muffler protector", "heat shield", "muffler cover", "heat guard"]
+    },
+    {
+      "id": "exhaust-seals-joints",
+      "name": "Gaskets & Pipe Joint (#3, #8, #9)",
+      "kind": "part",
+      "parentId": "exhaust",
+      "description": "Two ring gaskets where the header pipes seal against the cylinder head (#3), and a clamp band (#8) with a gasket (#9) where the exhaust pipe slips into the muffler.",
+      "function": "Seal the exhaust against leaks. Header gaskets are normally replaced whenever the pipes are removed.",
+      "verification": "cross-referenced",
+      "sourceId": "revzilla-2026-abs-muffler",
+      "verificationNote": "Honda names, part numbers and torque values are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "service": { "verified": false, "notes": "Exhaust joint and stud nut torques not yet verified. Consult the Honda service manual (61MLH00)." },
+      "keywords": ["exhaust gasket", "clamp", "joint", "exhaust leak"]
+    },
+    {
+      "id": "exhaust-mounting",
+      "name": "Exhaust Mounting Hardware",
+      "kind": "part",
+      "parentId": "exhaust",
+      "description": "Brackets, rubber mounts and collars, bolts, nuts (including the stud nuts at the cylinder head, #19), washers and wire clips (about #2, #4, #6, #10–#13 and #15–#25 in the diagram).",
+      "function": "Hold the exhaust to the engine and frame. The rubber mounts isolate vibration, and the clips route the sensor wire.",
+      "verification": "cross-referenced",
+      "sourceId": "revzilla-2026-abs-muffler",
+      "verificationNote": "Individual items, names and torque values are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "service": { "verified": false, "notes": "Torque specification not yet verified. Consult the Honda service manual (61MLH00)." },
+      "keywords": ["exhaust bracket", "exhaust bolt", "muffler mount", "rubber mount"]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "assembly": "transmission",
+  "model": "CMX500A",
+  "modelYear": 2026,
+  "parts": [
+    {
+      "id": "transmission",
+      "name": "Transmission (6-speed)",
+      "kind": "assembly",
+      "parentId": "engine",
+      "subassembly": "Drivetrain",
+      "description": "A six-speed manual constant-mesh gearbox inside the crankcase.",
+      "function": "Selects the ratio between engine speed and rear-wheel speed. Low gears multiply torque to pull away; high gears let the engine turn slowly at cruising speed.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "geometryAccuracy": "none",
+      "facts": [
+        { "label": "Type", "value": "Six-speed manual", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" },
+        { "label": "Final drive", "value": "#520 chain; 15T/40T", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" }
+      ],
+      "relatedParts": ["clutch", "drive-sprocket", "shift-lever"],
+      "keywords": ["gearbox", "gears", "transmission", "six speed"],
+      "educationId": "power-path"
+    },
+    {
+      "id": "mainshaft",
+      "name": "Mainshaft",
+      "kind": "part",
+      "parentId": "transmission",
+      "description": "The transmission input shaft, driven by the clutch.",
+      "function": "Carries engine torque into the gear pairs.",
+      "verification": "unverified",
+      "verificationNote": "This is a generic gearbox part. The Honda name, gear layout and part numbers are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["input shaft", "main shaft"]
+    },
+    {
+      "id": "countershaft",
+      "name": "Countershaft",
+      "kind": "part",
+      "parentId": "transmission",
+      "description": "The transmission output shaft. The front (drive) sprocket mounts on its end.",
+      "function": "Delivers the selected gear ratio's output to the chain drive.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "relatedParts": ["drive-sprocket"],
+      "keywords": ["output shaft", "counter shaft"]
+    },
+    {
+      "id": "gearshift-mechanism",
+      "name": "Gearshift Mechanism",
+      "kind": "assembly",
+      "parentId": "transmission",
+      "description": "The shift spindle, shift drum and shift forks that move the gears when you work the shift lever.",
+      "function": "Each click of the shift lever rotates the shift drum by one position. Grooves in the drum guide the shift forks, which slide the gear dogs into or out of engagement.",
+      "verification": "unverified",
+      "verificationNote": "The Honda diagram names and part numbers are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "relatedParts": ["shift-lever"],
+      "keywords": ["shift drum", "shift fork", "gearshift spindle", "shifter"]
+    }
+  ]
+}

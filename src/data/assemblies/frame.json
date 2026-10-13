@@ -1,0 +1,70 @@
+{
+  "assembly": "frame",
+  "model": "CMX500A",
+  "modelYear": 2026,
+  "parts": [
+    {
+      "id": "frame",
+      "name": "Frame",
+      "kind": "part",
+      "parentId": "chassis",
+      "description": "A tubular-steel frame that, in Honda's words, 'holds the engine in three places.' The tube layout shown is representative.",
+      "function": "The backbone of the motorcycle. It joins the steering head, the engine, the swingarm pivot and the rear shocks, and sets the steering geometry and wheelbase.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-features",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-frame"],
+      "oem": { "ficheName": "FRAME", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
+      "facts": [
+        { "label": "Construction", "value": "Tubular steel", "sourceId": "honda-2026-features", "verification": "2026-oem-verified" },
+        { "label": "Wheelbase", "value": "58.7 in", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" },
+        { "label": "Rake / trail", "value": "28° / 4.3 in (110 mm)", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" }
+      ],
+      "relatedParts": ["engine-mounts", "swingarm", "steering-stem"],
+      "keywords": ["chassis", "frame", "backbone"]
+    },
+    {
+      "id": "engine-mounts",
+      "name": "Engine Mounting / Hangers",
+      "kind": "part",
+      "parentId": "chassis",
+      "description": "The brackets, hanger plates and bolts that attach the engine to the frame. Honda states the frame holds the engine in three places.",
+      "function": "Locate the engine in the frame and pass loads between them. Because the engine is part of the chassis structure, these joints also contribute to frame stiffness.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-features",
+      "verificationNote": "The three mounting locations are confirmed by Honda. Their positions, hardware, part numbers and torque values are not yet verified for 2026 CMX500A, so no mount geometry is drawn.",
+      "geometryAccuracy": "none",
+      "relatedParts": ["frame", "crankcase"],
+      "keywords": ["engine hanger", "engine mount", "hanger plate", "hanger bolt"]
+    },
+    {
+      "id": "swingarm",
+      "name": "Swingarm",
+      "kind": "part",
+      "parentId": "chassis",
+      "description": "The pivoting rear fork that holds the rear axle. In Honda's catalog it sits under the frame group.",
+      "function": "Lets the rear wheel move up and down while keeping it aligned. The twin rear shocks control that motion.",
+      "verification": "cross-referenced",
+      "sourceId": "revzilla-2026-se-index",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-swingarm"],
+      "oem": { "ficheName": "SWINGARM", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
+      "relatedParts": ["rear-shocks", "rear-axle", "drive-chain"],
+      "keywords": ["swing arm", "rear fork", "pivot"]
+    },
+    {
+      "id": "side-stand",
+      "name": "Side Stand",
+      "kind": "part",
+      "parentId": "chassis",
+      "description": "A fold-out kickstand. It is drawn here in the retracted position.",
+      "function": "Supports the parked motorcycle. On many Honda models a side-stand switch also stops the engine if a gear is selected with the stand down; that switch is not yet verified for 2026 CMX500A.",
+      "verification": "cross-referenced",
+      "sourceId": "revzilla-2026-se-index",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-side-stand"],
+      "oem": { "ficheName": "SIDE STAND", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
+      "keywords": ["kickstand", "stand", "side stand"]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "assembly": "cooling",
+  "model": "CMX500A",
+  "modelYear": 2026,
+  "parts": [
+    {
+      "id": "radiator",
+      "name": "Radiator",
+      "kind": "part",
+      "parentId": "cooling",
+      "description": "A heat exchanger of thin tubes and fins. It is drawn here mounted ahead of the engine.",
+      "function": "Hot coolant from the engine flows through the radiator's tubes, and air passing over the fins carries the heat away before the coolant returns to the engine.",
+      "verification": "cross-referenced",
+      "sourceId": "revzilla-2026-se-index",
+      "verificationNote": "Honda confirms the 2026 engine is liquid-cooled; the RADIATOR diagram is listed in the 2026 catalog index.",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-radiator"],
+      "oem": { "ficheName": "RADIATOR", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
+      "relatedParts": ["water-pump", "thermostat", "coolant-hoses"],
+      "keywords": ["radiator", "coolant", "cooling"],
+      "educationId": "cooling"
+    },
+    {
+      "id": "radiator-fan",
+      "name": "Radiator Fan",
+      "kind": "part",
+      "parentId": "cooling",
+      "description": "An electric cooling fan. Whether the 2026 CMX500A has one, and its part number, are not yet verified.",
+      "function": "On liquid-cooled motorcycles a fan pulls air through the radiator when the bike is moving slowly or stopped, so there is too little natural airflow.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "relatedParts": ["radiator"],
+      "keywords": ["fan", "cooling fan"]
+    },
+    {
+      "id": "water-pump",
+      "name": "Water Pump",
+      "kind": "part",
+      "parentId": "cooling",
+      "description": "An engine-driven impeller pump that circulates coolant.",
+      "function": "Keeps coolant moving through the engine's water jackets and the radiator whenever the engine is running.",
+      "verification": "cross-referenced",
+      "sourceId": "revzilla-2026-se-index",
+      "geometryAccuracy": "none",
+      "oem": { "ficheName": "WATER PUMP", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
+      "relatedParts": ["radiator", "thermostat"],
+      "keywords": ["coolant pump", "impeller"],
+      "educationId": "cooling"
+    },
+    {
+      "id": "thermostat",
+      "name": "Thermostat",
+      "kind": "part",
+      "parentId": "cooling",
+      "description": "A temperature-sensitive valve in the coolant circuit.",
+      "function": "Stays closed while the engine is cold so coolant bypasses the radiator and the engine warms up quickly. It opens at operating temperature to send coolant through the radiator.",
+      "verification": "cross-referenced",
+      "sourceId": "revzilla-2026-se-index",
+      "geometryAccuracy": "none",
+      "oem": { "ficheName": "THERMOSTAT", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
+      "relatedParts": ["radiator", "water-pump"],
+      "keywords": ["thermostat", "coolant temperature"],
+      "educationId": "cooling"
+    },
+    {
+      "id": "coolant-hoses",
+      "name": "Coolant Hoses",
+      "kind": "part",
+      "parentId": "cooling",
+      "description": "Rubber hoses that carry coolant between the engine and the radiator.",
+      "function": "Close the coolant loop: hot coolant goes out to the radiator and cooled coolant comes back to the engine. The routing shown here is representative only.",
+      "verification": "unverified",
+      "verificationNote": "Hose routing and part numbers are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-coolant-hoses"],
+      "keywords": ["radiator hose", "coolant hose"],
+      "educationId": "cooling"
+    }
+  ]
+}

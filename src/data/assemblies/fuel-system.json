@@ -1,0 +1,100 @@
+{
+  "assembly": "fuel-system",
+  "model": "CMX500A",
+  "modelYear": 2026,
+  "parts": [
+    {
+      "id": "fuel-tank",
+      "name": "Fuel Tank",
+      "kind": "part",
+      "parentId": "intake-fuel",
+      "description": "The Rebel's signature peanut-shaped steel tank, which holds 3.0 US gallons.",
+      "function": "Stores the gasoline that the fuel pump delivers to the injectors. Its painted exterior is also the bike's main styling panel.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-features",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-fuel-tank"],
+      "facts": [
+        { "label": "Capacity", "value": "3.0 gal", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" },
+        { "label": "Shape", "value": "Peanut-shaped (Honda description)", "sourceId": "honda-2026-features", "verification": "2026-oem-verified" }
+      ],
+      "relatedParts": ["fuel-pump"],
+      "keywords": ["gas tank", "tank", "fuel"],
+      "educationId": "fuel-injection"
+    },
+    {
+      "id": "fuel-pump",
+      "name": "Fuel Pump",
+      "kind": "part",
+      "parentId": "intake-fuel",
+      "description": "An electric pump that pressurizes fuel for the injection system. Its location and part number are not yet verified for 2026 CMX500A.",
+      "function": "Delivers fuel at a regulated pressure to the injectors whenever the engine is running or being started.",
+      "verification": "unverified",
+      "verificationNote": "PGM-FI fuel injection is confirmed by Honda. The pump's location, part number and diagram are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "relatedParts": ["fuel-tank", "throttle-bodies"],
+      "keywords": ["fuel pump", "pump"],
+      "educationId": "fuel-injection"
+    },
+    {
+      "id": "pgm-fi",
+      "name": "PGM-FI Fuel Injection",
+      "kind": "assembly",
+      "parentId": "intake-fuel",
+      "description": "Honda's programmed fuel injection (PGM-FI).",
+      "function": "An electronic control unit reads sensors such as throttle position and engine speed and fires the injectors for the right amount of fuel on every intake stroke.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "geometryAccuracy": "representative",
+      "facts": [
+        { "label": "Induction", "value": "PGM-FI; 34 mm throttle bodies", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" }
+      ],
+      "relatedParts": ["ecu"],
+      "keywords": ["fuel injection", "EFI", "PGM-FI", "injector"],
+      "educationId": "fuel-injection"
+    },
+    {
+      "id": "throttle-bodies",
+      "name": "Throttle Bodies (34 mm)",
+      "kind": "part",
+      "parentId": "pgm-fi",
+      "description": "Two throttle bodies, one per cylinder, with 34 mm bores. Their position in the 3D view is representative.",
+      "function": "A butterfly valve inside each throttle body opens as you twist the throttle, letting more air into the engine. The injection system adds fuel in proportion.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-throttle-bodies"],
+      "facts": [
+        { "label": "Bore", "value": "34 mm", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" }
+      ],
+      "relatedParts": ["throttle-grip", "air-cleaner"],
+      "keywords": ["throttle body", "intake", "butterfly"],
+      "educationId": "fuel-injection"
+    },
+    {
+      "id": "fuel-injectors",
+      "name": "Fuel Injectors",
+      "kind": "part",
+      "parentId": "pgm-fi",
+      "description": "Electrically operated nozzles that spray fuel into the intake.",
+      "function": "Atomize a precisely timed, precisely metered fuel charge for each cylinder.",
+      "verification": "unverified",
+      "verificationNote": "Injector count, position and part numbers are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["injector"]
+    },
+    {
+      "id": "air-cleaner",
+      "name": "Air Cleaner",
+      "kind": "part",
+      "parentId": "intake-fuel",
+      "description": "The airbox and filter element that feed the throttle bodies. Location and part number are not yet verified for 2026 CMX500A.",
+      "function": "Filters dust out of the intake air so it cannot wear the cylinders and valves.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "relatedParts": ["throttle-bodies"],
+      "keywords": ["air filter", "airbox", "intake"]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "assembly": "se-equipment",
+  "model": "CMX500A2",
+  "modelYear": 2026,
+  "parts": [
+    {
+      "id": "headlight-cowl",
+      "name": "Headlight Cowl (SE)",
+      "kind": "part",
+      "parentId": "lighting",
+      "variants": [
+        "cmx500a2"
+      ],
+      "description": "A small color-matched fairing around the headlight, fitted at the factory to the SE. This is the 'front fairing'. Its shape in the 3D view is representative.",
+      "function": "Styling, plus a little wind deflection away from the rider's chest at speed.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-features",
+      "verificationNote": "Honda's 2026 features list 'a color-matched headlight cowl' on the SE. Shape, mounting and part numbers are not yet verified for 2026 CMX500A2.",
+      "geometryAccuracy": "representative",
+      "geometryIds": [
+        "geo-headlight-cowl"
+      ],
+      "oem": {
+        "ficheName": "HEADLIGHT COWL",
+        "verification": "cross-referenced",
+        "sourceId": "revzilla-2026-se-index",
+        "note": "A HEADLIGHT COWL diagram is listed in the 2026 Rebel 500 ABS SE catalog index; its parts list could not be read."
+      },
+      "relatedParts": [
+        "headlight"
+      ],
+      "keywords": [
+        "fairing",
+        "front fairing",
+        "cowl",
+        "headlight cowl",
+        "flyscreen",
+        "SE"
+      ]
+    },
+    {
+      "id": "fork-boots",
+      "name": "Fork Boots (SE)",
+      "kind": "part",
+      "parentId": "front-fork",
+      "variants": [
+        "cmx500a2"
+      ],
+      "description": "Black rubber gaiters (bellows) over the fork tubes, fitted at the factory to the SE.",
+      "function": "Keep grit and stone chips off the chrome fork tubes and seals, and give the front end a vintage look.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-features",
+      "verificationNote": "Honda's 2026 features list 'black fork boots' on the SE. Part numbers are not yet verified for 2026 CMX500A2.",
+      "geometryAccuracy": "representative",
+      "geometryIds": [
+        "geo-fork-boots"
+      ],
+      "relatedParts": [
+        "fork-tubes",
+        "fork-bushings-seals"
+      ],
+      "keywords": [
+        "fork gaiters",
+        "fork boots",
+        "bellows",
+        "SE"
+      ]
+    },
+    {
+      "id": "seat-se",
+      "name": "Rider Seat — Brown Diamond-Stitch (SE)",
+      "kind": "part",
+      "parentId": "body-controls",
+      "variants": [
+        "cmx500a2"
+      ],
+      "description": "The SE's brown diamond-stitch rider seat. The 3D view reuses the teardrop seat shape in brown; the stitch pattern isn't modelled.",
+      "function": "Rider support at the Rebel's low 27.2 in seat height.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-features",
+      "verificationNote": "Honda's 2026 features list 'a brown diamond-stitch seat' on the SE. Shape and part number are not yet verified for 2026 CMX500A2.",
+      "geometryAccuracy": "representative",
+      "geometryIds": [
+        "geo-seat-se"
+      ],
+      "facts": [
+        {
+          "label": "Seat height",
+          "value": "27.2 in",
+          "sourceId": "honda-2026-specs",
+          "verification": "2026-oem-verified"
+        }
+      ],
+      "keywords": [
+        "seat",
+        "saddle",
+        "diamond stitch",
+        "brown seat",
+        "SE"
+      ]
+    },
+    {
+      "id": "passenger-seat",
+      "name": "Passenger Seat (SE)",
+      "kind": "part",
+      "parentId": "body-controls",
+      "variants": [
+        "cmx500a2"
+      ],
+      "description": "A separate rounded pillion pad above the rear fender (diagram #8), held with grommets (#7), a screw (#9) and a washer (#10). Its shape and position in the 3D view are representative.",
+      "function": "Seat for a passenger.",
+      "verification": "unverified",
+      "sourceId": "owner-seat-diagram",
+      "verificationNote": "Included at the owner's direction from a supplied SEAT diagram. Honda's 2026 features release does not mention a passenger seat for the SE, so SE fitment is not yet verified for 2026 CMX500A2. Passenger footpegs are not modelled.",
+      "geometryAccuracy": "representative",
+      "geometryIds": [
+        "geo-passenger-seat"
+      ],
+      "oem": {
+        "ficheName": "SEAT",
+        "verification": "cross-referenced",
+        "sourceId": "owner-seat-diagram",
+        "note": "Passenger seat is diagram item #8."
+      },
+      "keywords": [
+        "pillion",
+        "passenger seat",
+        "rear seat",
+        "two-up",
+        "SE"
+      ]
+    }
+  ]
+}

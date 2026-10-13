@@ -1,0 +1,168 @@
+{
+  "assembly": "bodywork",
+  "model": "CMX500A",
+  "modelYear": 2026,
+  "parts": [
+    {
+      "id": "seat",
+      "name": "Rider Seat",
+      "kind": "part",
+      "parentId": "body-controls",
+      "description": "A low solo rider seat, 27.2 in high. Seen from above it is a teardrop: a narrow nose tucks under the tank and the rear is wide and rounded (diagram #2). It is held by a rear bolt with a collar and grommet (#12, #11, #1) and sits on rubber cushions underneath (#3–#6). This is the standard model's seat; the SE gets a brown diamond-stitch seat instead.",
+      "function": "Rider support. The low seat height is central to the Rebel's approachability: Honda says it is meant 'to ensure riders of any height feel confident when coming to a stop.'",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-features",
+      "geometryAccuracy": "representative",
+      "geometryIds": [
+        "geo-seat"
+      ],
+      "facts": [
+        {
+          "label": "Seat height",
+          "value": "27.2 in",
+          "sourceId": "honda-2026-specs",
+          "verification": "2026-oem-verified"
+        },
+        {
+          "label": "SE difference",
+          "value": "SE uses a brown diamond-stitch seat (not this model)",
+          "sourceId": "honda-2026-features",
+          "verification": "2026-oem-verified"
+        }
+      ],
+      "keywords": [
+        "seat",
+        "saddle",
+        "solo seat",
+        "rider seat"
+      ],
+      "variants": [
+        "cmx500a"
+      ],
+      "oem": {
+        "ficheName": "SEAT",
+        "verification": "cross-referenced",
+        "sourceId": "owner-seat-diagram",
+        "note": "Rider seat is diagram item #2. Part number not yet verified for 2026 CMX500A."
+      }
+    },
+    {
+      "id": "fenders",
+      "name": "Fenders",
+      "kind": "assembly",
+      "parentId": "body-controls",
+      "description": "The front and rear fenders. Their shapes in the 3D view are representative of the Rebel's short, bobbed style.",
+      "function": "Keep road spray and debris off the rider and the bike.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "keywords": [
+        "fender",
+        "mudguard"
+      ]
+    },
+    {
+      "id": "front-fender",
+      "name": "Front Fender",
+      "kind": "part",
+      "parentId": "fenders",
+      "description": "A short front fender over the front tire.",
+      "function": "Deflects spray thrown up by the front tire.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": [
+        "geo-front-fender"
+      ],
+      "keywords": [
+        "front fender",
+        "mudguard"
+      ]
+    },
+    {
+      "id": "rear-fender",
+      "name": "Rear Fender",
+      "kind": "part",
+      "parentId": "fenders",
+      "description": "A bobbed rear fender carrying the taillight and turn signals.",
+      "function": "Shields the rider and the electrics from rear-tire spray.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": [
+        "geo-rear-fender"
+      ],
+      "keywords": [
+        "rear fender",
+        "mudguard"
+      ]
+    },
+    {
+      "id": "side-covers",
+      "name": "Side Covers",
+      "kind": "assembly",
+      "parentId": "body-controls",
+      "description": "Left and right side panels below the seat. Their shapes, and what they conceal, are not yet verified for 2026 CMX500A.",
+      "function": "Cover and protect components under the seat area and tidy the bike's appearance.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "keywords": [
+        "side cover",
+        "side panel"
+      ]
+    },
+    {
+      "id": "side-cover-left",
+      "name": "Left Side Cover",
+      "kind": "part",
+      "parentId": "side-covers",
+      "description": "The left side panel.",
+      "function": "Cosmetic and protective cover.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": [
+        "geo-side-cover-left"
+      ],
+      "keywords": [
+        "side cover"
+      ]
+    },
+    {
+      "id": "side-cover-right",
+      "name": "Right Side Cover",
+      "kind": "part",
+      "parentId": "side-covers",
+      "description": "The right side panel.",
+      "function": "Cosmetic and protective cover.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": [
+        "geo-side-cover-right"
+      ],
+      "keywords": [
+        "side cover"
+      ]
+    },
+    {
+      "id": "license-bracket",
+      "name": "License Plate Bracket",
+      "kind": "part",
+      "parentId": "body-controls",
+      "description": "The rear license plate mount.",
+      "function": "Holds the license plate under the license light.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": [
+        "geo-license-bracket"
+      ],
+      "keywords": [
+        "license plate",
+        "plate bracket"
+      ]
+    }
+  ]
+}

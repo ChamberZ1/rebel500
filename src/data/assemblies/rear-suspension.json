@@ -1,0 +1,54 @@
+{
+  "assembly": "rear-suspension",
+  "model": "CMX500A",
+  "modelYear": 2026,
+  "parts": [
+    {
+      "id": "rear-shocks",
+      "name": "Rear Shocks (Dual)",
+      "kind": "assembly",
+      "parentId": "rear-suspension",
+      "description": "Twin shock absorbers, one on each side between the swingarm and the frame. They give 3.7 in of rear-wheel travel and have two-step preload adjusters.",
+      "function": "The springs carry the rear of the bike and the dampers control how fast the swingarm moves. The preload adjusters let a rider set the ride height for a passenger or luggage.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "geometryAccuracy": "representative",
+      "facts": [
+        { "label": "Type", "value": "Dual shocks", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" },
+        { "label": "Travel", "value": "3.7 in", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" },
+        { "label": "Adjustment", "value": "Two-step preload adjusters", "sourceId": "honda-2026-features", "verification": "2026-oem-verified" }
+      ],
+      "relatedParts": ["swingarm"],
+      "keywords": ["shock", "shocks", "rear cushion", "rear suspension", "preload"],
+      "educationId": "suspension"
+    },
+    {
+      "id": "rear-shock-left",
+      "name": "Left Rear Shock",
+      "kind": "part",
+      "parentId": "rear-shocks",
+      "description": "The left-hand rear shock absorber.",
+      "function": "Springs and damps the left side of the swingarm.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "verificationNote": "Dual shocks are Honda-confirmed. Mount positions and part numbers are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-shock-left"],
+      "keywords": ["left shock"]
+    },
+    {
+      "id": "rear-shock-right",
+      "name": "Right Rear Shock",
+      "kind": "part",
+      "parentId": "rear-shocks",
+      "description": "The right-hand rear shock absorber.",
+      "function": "Springs and damps the right side of the swingarm.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "verificationNote": "Dual shocks are Honda-confirmed. Mount positions and part numbers are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-shock-right"],
+      "keywords": ["right shock"]
+    }
+  ]
+}

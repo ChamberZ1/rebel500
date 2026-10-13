@@ -1,0 +1,78 @@
+{
+  "assembly": "front-wheel",
+  "model": "CMX500A",
+  "modelYear": 2026,
+  "parts": [
+    {
+      "id": "front-wheel-assy",
+      "name": "Front Wheel",
+      "kind": "assembly",
+      "parentId": "wheels-drive",
+      "description": "A 16-inch cast-aluminum front wheel with a 130/90-16 Dunlop tire, the brake disc and the axle.",
+      "function": "Carries the front of the bike, provides steering grip and holds the front brake disc.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-features",
+      "geometryAccuracy": "approximate",
+      "oem": { "ficheName": "FRONT WHEEL", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
+      "facts": [
+        { "label": "Wheel", "value": "16-inch cast aluminum", "sourceId": "honda-2026-features", "verification": "2026-oem-verified" },
+        { "label": "Tire", "value": "130/90-16 (Dunlop)", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" }
+      ],
+      "relatedParts": ["front-brake", "front-fork"],
+      "keywords": ["front wheel", "rim", "front tire"]
+    },
+    {
+      "id": "front-rim",
+      "name": "Front Wheel (Cast Rim)",
+      "kind": "part",
+      "parentId": "front-wheel-assy",
+      "description": "A 16-inch cast-aluminum wheel. The diameter matches Honda's published size; the spoke design shown is representative.",
+      "function": "Holds the tire's bead and connects the tire to the hub, bearings and brake disc.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-features",
+      "geometryAccuracy": "approximate",
+      "geometryIds": ["geo-front-rim"],
+      "keywords": ["rim", "cast wheel"]
+    },
+    {
+      "id": "front-tire",
+      "name": "Front Tire 130/90-16",
+      "kind": "part",
+      "parentId": "front-wheel-assy",
+      "description": "A Dunlop 130/90-16 tire. Its outside diameter in the 3D view is calculated from the tire size.",
+      "function": "The front contact patch provides steering and braking grip. Most braking force goes through the front tire.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "verificationNote": "Tire size and brand are from Honda's 2026 information. Inflation pressures are not yet verified here; see the owner's manual or tire placard.",
+      "geometryAccuracy": "approximate",
+      "geometryIds": ["geo-front-tire"],
+      "keywords": ["tyre", "tire", "dunlop", "130/90-16"]
+    },
+    {
+      "id": "front-axle",
+      "name": "Front Axle",
+      "kind": "part",
+      "parentId": "front-wheel-assy",
+      "description": "The axle shaft that runs through the front wheel hub and both fork sliders.",
+      "function": "Locates the wheel between the fork legs and acts as the shaft the wheel bearings turn on.",
+      "verification": "unverified",
+      "verificationNote": "The part number and torque spec are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-front-axle"],
+      "service": { "verified": false, "notes": "Torque specification not yet verified. Consult the Honda service manual (61MLH00)." },
+      "keywords": ["axle", "front axle"]
+    },
+    {
+      "id": "front-wheel-bearings",
+      "name": "Front Wheel Bearings",
+      "kind": "part",
+      "parentId": "front-wheel-assy",
+      "description": "Sealed ball bearings in the wheel hub.",
+      "function": "Let the wheel spin freely on the axle.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["bearing", "wheel bearing"]
+    }
+  ]
+}

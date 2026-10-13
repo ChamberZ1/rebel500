@@ -1,0 +1,97 @@
+{
+  "assembly": "front-brake",
+  "model": "CMX500A",
+  "modelYear": 2026,
+  "parts": [
+    {
+      "id": "front-brake",
+      "name": "Front Brake",
+      "kind": "assembly",
+      "parentId": "brakes",
+      "description": "A single hydraulic caliper on a 296 mm disc, with ABS.",
+      "function": "Provides most of the bike's stopping power. Squeezing the lever pressurizes brake fluid, which pushes the caliper pistons and clamps the pads onto the disc.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "geometryAccuracy": "approximate",
+      "facts": [
+        { "label": "Type", "value": "Single hydraulic caliper with ABS", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" },
+        { "label": "Disc", "value": "296 mm", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" }
+      ],
+      "relatedParts": ["front-brake-lever", "abs"],
+      "keywords": ["front brake", "brake"],
+      "educationId": "braking"
+    },
+    {
+      "id": "front-brake-disc",
+      "name": "Front Brake Disc (296 mm)",
+      "kind": "part",
+      "parentId": "front-brake",
+      "description": "A 296 mm steel rotor bolted to the front hub. The diameter in the 3D view matches the Honda spec; the side it is mounted on is representative.",
+      "function": "The friction surface the pads clamp. It turns the bike's motion into heat.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "geometryAccuracy": "approximate",
+      "geometryIds": ["geo-front-disc"],
+      "keywords": ["rotor", "disc", "front disc", "296"]
+    },
+    {
+      "id": "front-brake-caliper",
+      "name": "Front Brake Caliper",
+      "kind": "part",
+      "parentId": "front-brake",
+      "description": "A single hydraulic caliper mounted on a fork slider.",
+      "function": "Hydraulic pressure pushes its pistons, which press the brake pads against the disc.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "verificationNote": "The caliper type is Honda-published. Piston count, mounting side and part number are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-front-caliper"],
+      "oem": { "ficheName": "FRONT BRAKE CALIPER", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
+      "service": { "verified": false, "notes": "Caliper mounting bolt torque not yet verified. Consult the Honda service manual (61MLH00)." },
+      "keywords": ["caliper", "front caliper", "brake pads"],
+      "educationId": "braking"
+    },
+    {
+      "id": "front-brake-pads",
+      "name": "Front Brake Pads",
+      "kind": "part",
+      "parentId": "front-brake-caliper",
+      "description": "Friction pads inside the caliper.",
+      "function": "Wear-surface contact with the disc. Inspect them regularly and replace them at the wear limit.",
+      "verification": "unverified",
+      "verificationNote": "The part number and wear limit are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["pads", "brake pads"]
+    },
+    {
+      "id": "front-master-cylinder",
+      "name": "Front Brake Master Cylinder",
+      "kind": "part",
+      "parentId": "front-brake",
+      "description": "The lever-operated hydraulic pump with its fluid reservoir, on the right handlebar.",
+      "function": "Turns lever force into hydraulic pressure in the front brake line.",
+      "verification": "cross-referenced",
+      "sourceId": "revzilla-2026-se-index",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-front-master-cylinder"],
+      "oem": { "ficheName": "FRONT BRAKE MASTER CYLINDER", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
+      "relatedParts": ["front-brake-lever"],
+      "keywords": ["master cylinder", "brake reservoir", "brake fluid"],
+      "educationId": "braking"
+    },
+    {
+      "id": "front-brake-line",
+      "name": "Front Brake Line",
+      "kind": "part",
+      "parentId": "front-brake",
+      "description": "Hydraulic hose and pipe running from the master cylinder through the ABS modulator to the caliper. The routing shown is representative.",
+      "function": "Carries pressurized brake fluid to the caliper.",
+      "verification": "unverified",
+      "verificationNote": "Routing and part numbers are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-front-brake-hose"],
+      "keywords": ["brake hose", "brake line", "brake pipe"],
+      "educationId": "braking"
+    }
+  ]
+}

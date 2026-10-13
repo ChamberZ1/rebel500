@@ -1,0 +1,91 @@
+{
+  "assembly": "front-suspension",
+  "model": "CMX500A",
+  "modelYear": 2026,
+  "parts": [
+    {
+      "id": "front-fork",
+      "name": "Front Fork",
+      "kind": "assembly",
+      "parentId": "front-suspension",
+      "description": "A 41 mm telescopic fork with 5.5 in of travel. Honda notes the stanchions are set 9.1 in apart. The standard model's fork tubes are exposed; only the SE adds black fork boots.",
+      "function": "Holds the front wheel, lets it move up and down over bumps and controls that motion with springs and oil damping. The fork also turns with the steering.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "geometryAccuracy": "approximate",
+      "oem": { "ficheName": "FRONT FORK", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
+      "facts": [
+        { "label": "Type", "value": "41 mm telescopic fork", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" },
+        { "label": "Travel", "value": "5.5 in", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" },
+        { "label": "Stanchion spacing", "value": "9.1 in apart", "sourceId": "honda-2026-features", "verification": "2026-oem-verified" },
+        { "label": "Fork boots", "value": "SE only (black fork boots) — not on the standard CMX500A", "sourceId": "honda-2026-features", "verification": "2026-oem-verified" }
+      ],
+      "relatedParts": ["steering-stem", "top-bridge", "front-wheel-assy"],
+      "keywords": ["fork", "forks", "front shocks", "telescopic", "front suspension"],
+      "educationId": "suspension"
+    },
+    {
+      "id": "fork-tubes",
+      "name": "Fork Tubes (Stanchions)",
+      "kind": "part",
+      "parentId": "front-fork",
+      "description": "The two chrome 41 mm inner tubes, clamped in the triple clamps.",
+      "function": "Slide in and out of the fork sliders as the suspension moves. Their smooth chrome surface is what the fork seals wipe against.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "verificationNote": "The diameter and spacing are Honda-published. Part numbers are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "approximate",
+      "geometryIds": ["geo-fork-tubes"],
+      "keywords": ["stanchion", "inner tube", "fork tube"]
+    },
+    {
+      "id": "fork-sliders",
+      "name": "Fork Sliders (Outer Tubes)",
+      "kind": "part",
+      "parentId": "front-fork",
+      "description": "The lower fork legs. They hold the front axle and carry the brake caliper mount.",
+      "function": "Move up and down with the wheel, sliding over the stanchions on bushings.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-fork-sliders"],
+      "keywords": ["outer tube", "fork leg", "lower leg", "slider"]
+    },
+    {
+      "id": "fork-springs",
+      "name": "Fork Springs",
+      "kind": "part",
+      "parentId": "front-fork",
+      "description": "Coil springs inside the fork legs.",
+      "function": "Support the bike's weight and absorb bump energy. Spring rate and preload set how high the front sits and how firm it feels.",
+      "verification": "unverified",
+      "verificationNote": "Spring rate, length and part numbers are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["spring", "fork spring"]
+    },
+    {
+      "id": "fork-bushings-seals",
+      "name": "Fork Bushings / Seals",
+      "kind": "part",
+      "parentId": "front-fork",
+      "description": "Low-friction bushings between the tubes and sliders, plus oil seals and dust seals.",
+      "function": "The bushings let the fork slide smoothly without play. The seals keep fork oil in and grit out.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["bushing", "fork seal", "dust seal"]
+    },
+    {
+      "id": "fork-damping",
+      "name": "Fork Oil / Damping",
+      "kind": "part",
+      "parentId": "front-fork",
+      "description": "The fork oil and the internal damping parts.",
+      "function": "Forcing oil through small passages slows the fork's movement, so it doesn't keep bouncing on its springs.",
+      "verification": "unverified",
+      "verificationNote": "Oil type, oil level and damper design are not yet verified for 2026 CMX500A. Consult Honda service manual 61MLH00.",
+      "geometryAccuracy": "none",
+      "keywords": ["fork oil", "damper", "damping"]
+    }
+  ]
+}

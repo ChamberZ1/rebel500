@@ -1,0 +1,127 @@
+{
+  "assembly": "clutch",
+  "model": "CMX500A",
+  "modelYear": 2026,
+  "parts": [
+    {
+      "id": "clutch",
+      "name": "Clutch Assembly",
+      "kind": "assembly",
+      "parentId": "engine",
+      "subassembly": "Drivetrain",
+      "description": "A multiplate wet clutch with an assist/slipper function. It sits between the crankshaft and the transmission and runs in engine oil.",
+      "function": "Connects and disconnects engine power from the transmission. When you pull the clutch lever, the friction and steel plates separate, so the engine can spin without driving the transmission.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "verificationNote": "Honda lists a 'multiplate wet' clutch (2026 specifications) and an assist/slipper clutch (2026 features).",
+      "geometryAccuracy": "none",
+      "oem": { "ficheName": "CLUTCH", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index", "note": "Diagram name listed in the 2026 Rebel 500 catalog index. Part numbers not yet verified for 2026 CMX500A." },
+      "facts": [
+        { "label": "Type", "value": "Multiplate wet", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" },
+        { "label": "Feature", "value": "Assist/slipper clutch — Honda: \"allows for reduced effort in stop-and-go situations and enhances controlled deceleration.\"", "sourceId": "honda-2026-features", "verification": "2026-oem-verified" }
+      ],
+      "relatedParts": ["clutch-lever", "transmission", "crankshaft"],
+      "keywords": ["clutch", "slipper clutch", "assist clutch", "wet clutch"],
+      "educationId": "clutch"
+    },
+    {
+      "id": "clutch-outer",
+      "name": "Clutch Outer (Basket)",
+      "kind": "part",
+      "parentId": "clutch",
+      "description": "The outer drum of the clutch. It is driven by the crankshaft through a primary gear, and the friction discs key into its slots.",
+      "function": "Carries engine rotation into the clutch pack.",
+      "verification": "unverified",
+      "verificationNote": "This is a generic part of any multiplate clutch. The Honda name and part number are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["clutch basket", "clutch housing", "primary driven gear"]
+    },
+    {
+      "id": "clutch-center",
+      "name": "Clutch Center (Hub)",
+      "kind": "part",
+      "parentId": "clutch",
+      "description": "The inner hub of the clutch. The steel plates key onto it, and it is splined to the transmission mainshaft.",
+      "function": "Carries torque out of the clutch pack and into the transmission.",
+      "verification": "unverified",
+      "verificationNote": "This is a generic part of any multiplate clutch. The Honda name and part number are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["clutch hub", "inner hub"]
+    },
+    {
+      "id": "friction-plates",
+      "name": "Friction Plates (Discs)",
+      "kind": "part",
+      "parentId": "clutch",
+      "description": "Plates faced with friction material that turn with the clutch basket.",
+      "function": "When squeezed against the steel plates, their friction transmits engine torque. When released, they slip freely.",
+      "verification": "unverified",
+      "verificationNote": "A multiplate clutch is confirmed by Honda. The plate count and part numbers are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["clutch plates", "friction discs", "clutch disk"]
+    },
+    {
+      "id": "steel-plates",
+      "name": "Steel Plates",
+      "kind": "part",
+      "parentId": "clutch",
+      "description": "Plain steel plates that turn with the clutch hub and alternate with the friction plates.",
+      "function": "Provide the mating surfaces that the friction plates clamp against.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["clutch plates", "steel discs"]
+    },
+    {
+      "id": "pressure-plate",
+      "name": "Pressure Plate",
+      "kind": "part",
+      "parentId": "clutch",
+      "description": "The plate that the clutch springs push against to clamp the plate stack together.",
+      "function": "Clamps the clutch pack when the lever is released. Pulling the lever lifts it away so the plates can slip.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["clutch pressure plate"]
+    },
+    {
+      "id": "clutch-springs",
+      "name": "Clutch Springs",
+      "kind": "part",
+      "parentId": "clutch",
+      "description": "Springs that supply the clamping force on the clutch pack.",
+      "function": "Hold the plates together so the clutch transmits power. Their stiffness largely sets how heavy the lever feels.",
+      "verification": "unverified",
+      "verificationNote": "The spring type and count are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["clutch spring"]
+    },
+    {
+      "id": "assist-slipper",
+      "name": "Assist / Slipper Mechanism",
+      "kind": "part",
+      "parentId": "clutch",
+      "description": "Ramped surfaces built into the clutch that react to the direction of torque.",
+      "function": "Generic explanation, not a Honda description: under acceleration the ramps pull the clutch more tightly together (the 'assist'), which allows lighter springs and a lighter lever. When downshifting hard, back-torque from the rear wheel pushes the ramps apart so the clutch slips briefly instead of locking or hopping the rear tire.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-features",
+      "verificationNote": "The feature is confirmed by Honda for 2026. Its internal ramp design is not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["slipper clutch", "assist clutch", "back torque limiter"],
+      "educationId": "clutch"
+    },
+    {
+      "id": "clutch-release",
+      "name": "Clutch Release (Lifter) Mechanism",
+      "kind": "part",
+      "parentId": "clutch",
+      "description": "The linkage between the clutch lever and the pressure plate.",
+      "function": "Turns lever movement into the push that lifts the pressure plate. Whether this is cable- or hydraulic-operated on the 2026 CMX500A is not yet verified.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "relatedParts": ["clutch-lever"],
+      "keywords": ["clutch lifter", "clutch cable", "release"]
+    }
+  ]
+}

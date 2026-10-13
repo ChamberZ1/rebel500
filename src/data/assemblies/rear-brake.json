@@ -1,0 +1,96 @@
+{
+  "assembly": "rear-brake",
+  "model": "CMX500A",
+  "modelYear": 2026,
+  "parts": [
+    {
+      "id": "rear-brake",
+      "name": "Rear Brake",
+      "kind": "assembly",
+      "parentId": "brakes",
+      "description": "A single hydraulic caliper on a 240 mm disc, with ABS, operated by the right foot pedal.",
+      "function": "Adds stopping power and stabilizes the bike, especially at low speed and in turns.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "geometryAccuracy": "approximate",
+      "facts": [
+        { "label": "Type", "value": "Single hydraulic caliper with ABS", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" },
+        { "label": "Disc", "value": "240 mm", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" }
+      ],
+      "relatedParts": ["rear-brake-pedal", "abs"],
+      "keywords": ["rear brake", "brake"],
+      "educationId": "braking"
+    },
+    {
+      "id": "rear-brake-disc",
+      "name": "Rear Brake Disc (240 mm)",
+      "kind": "part",
+      "parentId": "rear-brake",
+      "description": "A 240 mm rotor on the rear hub. The diameter in the 3D view matches the Honda spec.",
+      "function": "The friction surface for the rear caliper.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "verificationNote": "Search results gave conflicting 2026 part numbers for this disc, so none is recorded.",
+      "geometryAccuracy": "approximate",
+      "geometryIds": ["geo-rear-disc"],
+      "keywords": ["rotor", "disc", "rear disc", "240"]
+    },
+    {
+      "id": "rear-brake-caliper",
+      "name": "Rear Brake Caliper",
+      "kind": "part",
+      "parentId": "rear-brake",
+      "description": "A single hydraulic caliper at the rear wheel.",
+      "function": "Clamps the pads onto the rear disc when the pedal is pressed.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "verificationNote": "The caliper type is Honda-published. Mounting and part number are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-rear-caliper"],
+      "oem": { "ficheName": "REAR BRAKE CALIPER", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
+      "keywords": ["caliper", "rear caliper"],
+      "educationId": "braking"
+    },
+    {
+      "id": "rear-brake-pads",
+      "name": "Rear Brake Pads",
+      "kind": "part",
+      "parentId": "rear-brake-caliper",
+      "description": "Friction pads inside the rear caliper.",
+      "function": "Contact the rear disc to create braking force.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["pads", "brake pads"]
+    },
+    {
+      "id": "rear-master-cylinder",
+      "name": "Rear Brake Master Cylinder",
+      "kind": "part",
+      "parentId": "rear-brake",
+      "description": "A pedal-operated master cylinder near the right footpeg, with its own reservoir.",
+      "function": "Turns pedal force into hydraulic pressure for the rear caliper.",
+      "verification": "cross-referenced",
+      "sourceId": "revzilla-2026-se-index",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-rear-master-cylinder"],
+      "oem": { "ficheName": "REAR BRAKE MASTER CYLINDER", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
+      "relatedParts": ["rear-brake-pedal"],
+      "keywords": ["rear master cylinder", "brake fluid"],
+      "educationId": "braking"
+    },
+    {
+      "id": "rear-brake-line",
+      "name": "Rear Brake Line",
+      "kind": "part",
+      "parentId": "rear-brake",
+      "description": "Hydraulic hose and pipe from the rear master cylinder through the ABS modulator to the rear caliper. The routing shown is representative.",
+      "function": "Carries pressurized brake fluid to the rear caliper.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-rear-brake-hose"],
+      "keywords": ["brake hose", "brake line"]
+    }
+  ]
+}

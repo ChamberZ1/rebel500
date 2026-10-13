@@ -1,0 +1,145 @@
+{
+  "assembly": "rear-wheel",
+  "model": "CMX500A",
+  "modelYear": 2026,
+  "parts": [
+    {
+      "id": "rear-wheel-assy",
+      "name": "Rear Wheel",
+      "kind": "assembly",
+      "parentId": "wheels-drive",
+      "description": "A 16-inch cast-aluminum rear wheel with a 150/80-16 Dunlop tire. It carries the rear brake disc and the final-driven sprocket.",
+      "function": "Turns chain drive into forward motion and carries most of the rider's weight.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-features",
+      "geometryAccuracy": "approximate",
+      "oem": {
+        "ficheName": "REAR WHEEL",
+        "ficheUrl": "https://www.revzilla.com/oem/honda/2026-honda-rebel-500-abs/rear-wheel",
+        "verification": "cross-referenced",
+        "sourceId": "revzilla-2026-abs-rear-wheel",
+        "note": "2026 Rebel 500 ABS (CMX500AAC) diagram. Only the final-driven sprocket's part number is recorded here."
+      },
+      "facts": [
+        { "label": "Wheel", "value": "16-inch cast aluminum", "sourceId": "honda-2026-features", "verification": "2026-oem-verified" },
+        { "label": "Tire", "value": "150/80-16 (Dunlop)", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" }
+      ],
+      "relatedParts": ["swingarm", "rear-brake", "final-drive"],
+      "keywords": ["rear wheel", "rim", "rear tire"],
+      "educationId": "power-path"
+    },
+    {
+      "id": "rear-rim",
+      "name": "Rear Wheel (Cast Rim)",
+      "kind": "part",
+      "parentId": "rear-wheel-assy",
+      "description": "A 16-inch cast-aluminum wheel. The spoke design shown is representative.",
+      "function": "Holds the tire and connects it to the hub, the sprocket carrier and the brake disc.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-features",
+      "verificationNote": "Search results disagreed about the 2026 rear-wheel part number, so it is not recorded. Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "approximate",
+      "geometryIds": ["geo-rear-rim"],
+      "keywords": ["rim", "cast wheel"]
+    },
+    {
+      "id": "rear-tire",
+      "name": "Rear Tire 150/80-16",
+      "kind": "part",
+      "parentId": "rear-wheel-assy",
+      "description": "A Dunlop 150/80-16 tire. Its outside diameter in the 3D view is calculated from the tire size.",
+      "function": "Puts engine power to the road and supports most of the load.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "geometryAccuracy": "approximate",
+      "geometryIds": ["geo-rear-tire"],
+      "keywords": ["tyre", "tire", "dunlop", "150/80-16"]
+    },
+    {
+      "id": "rear-axle",
+      "name": "Rear Axle",
+      "kind": "part",
+      "parentId": "rear-wheel-assy",
+      "description": "The axle through the rear hub and the swingarm ends. Chain tension is normally set by moving the axle.",
+      "function": "Locates the rear wheel in the swingarm. Its position sets chain slack and wheel alignment.",
+      "verification": "unverified",
+      "verificationNote": "The adjuster type, part number and torque spec are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "representative",
+      "geometryIds": ["geo-rear-axle"],
+      "service": { "verified": false, "notes": "Torque specification not yet verified. Consult the Honda service manual (61MLH00)." },
+      "keywords": ["axle", "rear axle", "chain adjuster"]
+    },
+    {
+      "id": "final-drive",
+      "name": "Final Drive (Chain & Sprockets)",
+      "kind": "assembly",
+      "parentId": "wheels-drive",
+      "description": "A #520 chain running from a 15-tooth drive sprocket to a 40-tooth driven sprocket: a 2.67:1 final reduction (40 ÷ 15).",
+      "function": "Carries power from the transmission output shaft to the rear wheel and multiplies torque by the sprocket ratio.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "geometryAccuracy": "approximate",
+      "facts": [
+        { "label": "Chain", "value": "#520", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" },
+        { "label": "Sprockets", "value": "15T front / 40T rear", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" }
+      ],
+      "relatedParts": ["transmission", "rear-wheel-assy"],
+      "keywords": ["chain", "sprocket", "final drive", "520"],
+      "educationId": "power-path"
+    },
+    {
+      "id": "drive-sprocket",
+      "name": "Drive Sprocket (15T)",
+      "kind": "part",
+      "parentId": "final-drive",
+      "description": "The small 15-tooth front sprocket on the transmission countershaft. Its pitch diameter in the 3D view is calculated from 15 teeth at #520 pitch.",
+      "function": "Pulls the chain using the output of the gearbox.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "verificationNote": "The tooth count is Honda-published. The part number is not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "approximate",
+      "geometryIds": ["geo-drive-sprocket"],
+      "relatedParts": ["countershaft"],
+      "keywords": ["front sprocket", "countershaft sprocket", "15T"],
+      "educationId": "power-path"
+    },
+    {
+      "id": "drive-chain",
+      "name": "Drive Chain (#520)",
+      "kind": "part",
+      "parentId": "final-drive",
+      "description": "A #520 roller chain on the left side of the bike.",
+      "function": "Links the two sprockets. It needs periodic cleaning, lubrication and slack adjustment.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "verificationNote": "Chain size is Honda-published. Link count, slack specification and part number are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "approximate",
+      "geometryIds": ["geo-drive-chain"],
+      "keywords": ["chain", "520 chain", "chain slack"],
+      "educationId": "power-path"
+    },
+    {
+      "id": "driven-sprocket",
+      "name": "Driven Sprocket (40T)",
+      "kind": "part",
+      "parentId": "final-drive",
+      "description": "The 40-tooth rear sprocket bolted to the rear wheel. Its pitch diameter in the 3D view is calculated from 40 teeth at #520 pitch.",
+      "function": "Receives the chain's pull and turns the rear wheel.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-specs",
+      "geometryAccuracy": "approximate",
+      "geometryIds": ["geo-driven-sprocket"],
+      "oem": {
+        "ficheName": "REAR WHEEL",
+        "oemName": "SPROCKET, FINAL DRIVEN (40T)",
+        "partNumber": "41201-MKG-A00",
+        "ficheUrl": "https://www.revzilla.com/oem/honda/2026-honda-rebel-500-abs/rear-wheel",
+        "verification": "cross-referenced",
+        "sourceId": "revzilla-2026-abs-rear-wheel",
+        "note": "Listed on the 2026 Rebel 500 ABS (CMX500AAC) REAR WHEEL diagram, read via search index. The 40T count matches Honda's 2026 spec. Confirm on the linked fiche before ordering."
+      },
+      "keywords": ["rear sprocket", "40T", "41201-MKG-A00"],
+      "educationId": "power-path"
+    }
+  ]
+}

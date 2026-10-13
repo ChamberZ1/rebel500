@@ -1,0 +1,49 @@
+{
+  "assembly": "abs",
+  "model": "CMX500A",
+  "modelYear": 2026,
+  "parts": [
+    {
+      "id": "abs",
+      "name": "ABS (Anti-lock Braking System)",
+      "kind": "assembly",
+      "parentId": "brakes",
+      "description": "Two-channel ABS acting on the front and rear brakes. Honda: 'ABS is standard for 2026.'",
+      "function": "Watches wheel speed. If a wheel starts to lock under hard braking, the ABS modulator briefly releases and reapplies pressure many times a second, so the tire keeps grip and the rider keeps steering control.",
+      "verification": "2026-oem-verified",
+      "sourceId": "honda-2026-features",
+      "geometryAccuracy": "none",
+      "facts": [
+        { "label": "ABS", "value": "Front and rear; standard on 2026 Rebel 500", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" }
+      ],
+      "relatedParts": ["front-brake", "rear-brake"],
+      "keywords": ["ABS", "anti-lock", "modulator"],
+      "educationId": "braking"
+    },
+    {
+      "id": "abs-modulator",
+      "name": "ABS Modulator",
+      "kind": "part",
+      "parentId": "abs",
+      "description": "A hydraulic control unit with valves, a pump and an electronic controller. Its location on the 2026 CMX500A is not yet verified, so no 3D geometry is drawn.",
+      "function": "Sits in the brake lines between the master cylinders and the calipers, and modulates brake pressure when a wheel is about to lock.",
+      "verification": "cross-referenced",
+      "sourceId": "revzilla-2026-se-index",
+      "verificationNote": "An ABS modulator bracket is listed in the 2026 Rebel 500 catalog index. Location and part number are not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["ABS unit", "modulator", "hydraulic unit"]
+    },
+    {
+      "id": "wheel-speed-sensors",
+      "name": "Wheel Speed Sensors",
+      "kind": "part",
+      "parentId": "abs",
+      "description": "Sensors at each wheel that read a toothed pulser ring.",
+      "function": "Report each wheel's speed to the ABS so it can detect impending lock-up.",
+      "verification": "unverified",
+      "verificationNote": "Not yet verified for 2026 CMX500A.",
+      "geometryAccuracy": "none",
+      "keywords": ["ABS sensor", "pulser ring", "tone ring"]
+    }
+  ]
+}
