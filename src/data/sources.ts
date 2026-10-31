@@ -137,6 +137,20 @@ export const SOURCES: Record<string, Source> = {
     caveat:
       'Parts list (Honda names and part numbers) not visible. The owner directed that the passenger seat is not fitted to the standard model and is fitted to the SE; Honda\'s 2026 features release does not mention an SE passenger seat.',
   },
+  'owner-photos-2026': {
+    id: 'owner-photos-2026',
+    name: 'Honda product/press photos of the 2026 Rebel 500 and Rebel 500 SE (supplied by the owner)',
+    publisher: 'American Honda (images supplied by the owner)',
+    url: 'https://powersports.honda.com/motorcycle/cruiser/rebel-500',
+    authority: 'oem-official',
+    access: 'user-supplied',
+    appliesTo: '2026 Rebel 500 (side view, Pearl Black) and 2026 Rebel 500 SE (blue, front three-quarter views)',
+    accessed: '2026-10-13',
+    usedFor:
+      'Appearance only: the side-profile trace of the representative model (scaled by wheelbase/tire size), the LED headlight with four projector modules in a 2×2 grid, the SE headlight cowl shape with its smoked top screen, and the SE ribbed fork boots.',
+    licensing: 'Photos viewed for reference only; not copied into this repository.',
+    caveat: 'Photos give appearance, not dimensions; traced positions are approximate. Treated as cross-referenced.',
+  },
   'revzilla-2026-se-index': {
     id: 'revzilla-2026-se-index',
     name: 'RevZilla OEM catalog — 2026 Honda Rebel 500 ABS SE (category index)',

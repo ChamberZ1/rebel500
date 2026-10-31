@@ -304,12 +304,48 @@ export function Headlight() {
       <mesh position={[front - 0.002, HEADLIGHT.y, 0]} rotation={[0, Math.PI / 2, 0]} material={MAT.chrome}>
         <torusGeometry args={[HEADLIGHT.radius - 0.004, 0.005, 10, 48]} />
       </mesh>
-      <mesh position={[front, HEADLIGHT.y, 0]} rotation={[0, Math.PI / 2, 0]} material={MAT.lensClear}>
-        <circleGeometry args={[HEADLIGHT.radius - 0.008, 40]} />
-      </mesh>
+      <HeadlightFace front={front} />
       {[-1, 1].map((s) => (
         <Rod key={s} from={[tubeAt.x, HEADLIGHT.y, s * (FORK_HALF_SPACING - 0.012)]} to={[HEADLIGHT.x + 0.05, HEADLIGHT.y, s * 0.088]} radius={0.008} material={MAT.frame} />
       ))}
+    </group>
+  );
+}
+
+/**
+ * LED face: dark reflector with four projector modules in a 2×2 grid, as seen in Honda's 2026
+ * photos, behind a thin clear outer lens. Module size/spacing are estimated from the photos.
+ */
+function HeadlightFace({ front }: { front: number }) {
+  const r = HEADLIGHT.radius - 0.008;
+  const pitch = 0.03; // half-spacing between module centers
+  return (
+    <group position={[front, HEADLIGHT.y, 0]} rotation={[0, Math.PI / 2, 0]}>
+      {/* dark reflector, slightly recessed */}
+      <mesh position={[0, 0, -0.012]} material={MAT.engineDark}>
+        <circleGeometry args={[r, 48]} />
+      </mesh>
+      {/* inner chrome ring */}
+      <mesh position={[0, 0, -0.011]} material={MAT.chrome}>
+        <ringGeometry args={[r - 0.008, r - 0.004, 48]} />
+      </mesh>
+      {[-1, 1].flatMap((ry) =>
+        [-1, 1].map((rz) => (
+          <group key={`${ry}${rz}`} position={[rz * pitch, ry * pitch, -0.008]}>
+            <RoundedBox args={[0.046, 0.046, 0.008]} radius={0.01} smoothness={3} material={MAT.frame} />
+            <mesh position={[0, 0, 0.0042]} material={MAT.led}>
+              <circleGeometry args={[0.016, 28]} />
+            </mesh>
+            <mesh position={[0, 0, 0.0043]} material={MAT.chrome}>
+              <ringGeometry args={[0.016, 0.019, 28]} />
+            </mesh>
+          </group>
+        )),
+      )}
+      {/* clear outer lens */}
+      <mesh material={MAT.glass}>
+        <circleGeometry args={[r, 48]} />
+      </mesh>
     </group>
   );
 }

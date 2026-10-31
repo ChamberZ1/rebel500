@@ -39,6 +39,12 @@ export const MAT = {
   lensAmber: new THREE.MeshStandardMaterial({ color: '#c77812', metalness: 0.1, roughness: 0.25, emissive: '#3a2304', emissiveIntensity: 0.4 }),
   lcd: new THREE.MeshStandardMaterial({ color: '#0e1a1e', metalness: 0.2, roughness: 0.15, emissive: '#1c4248', emissiveIntensity: 0.8 }),
   mirror: std('#b8c2cd', 1.0, 0.04),
+  /** LED projector element (glows slightly so the headlight reads as LED). */
+  led: new THREE.MeshStandardMaterial({ color: '#f4f8ff', metalness: 0.1, roughness: 0.1, emissive: '#dfe9ff', emissiveIntensity: 0.9 }),
+  /** Thin clear outer lens over the LED modules. */
+  glass: new THREE.MeshPhysicalMaterial({ color: '#ffffff', metalness: 0, roughness: 0.02, transmission: 0, transparent: true, opacity: 0.18 }),
+  /** Smoked screen on the SE headlight cowl. */
+  smoked: new THREE.MeshPhysicalMaterial({ color: '#0d1116', metalness: 0.2, roughness: 0.04, clearcoat: 1, transparent: true, opacity: 0.82 }),
   hose: std('#0b0b0c', 0.0, 0.75),
   chain: std('#4c5057', 0.85, 0.45),
   exhaust: std('#1b1c1f', 0.7, 0.34), // black exhaust finish

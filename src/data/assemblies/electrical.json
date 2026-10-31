@@ -21,8 +21,15 @@
         "sourceId": "revzilla-2026-abs-battery",
         "note": "From 2026 Rebel 500 ABS (CMX500AAC) diagram F820450, read via search index. Listed as GTZ8V type, superseding 31500-KZZ-J11. Confirm on the linked fiche before ordering."
       },
-      "relatedParts": ["starter-motor", "generator"],
-      "keywords": ["battery", "GTZ8V", "31500-K36-A01"],
+      "relatedParts": [
+        "starter-motor",
+        "generator"
+      ],
+      "keywords": [
+        "battery",
+        "GTZ8V",
+        "31500-K36-A01"
+      ],
       "educationId": "charging"
     },
     {
@@ -36,21 +43,31 @@
       "sourceId": "honda-2026-features",
       "geometryAccuracy": "representative",
       "facts": [
-        { "label": "Lighting", "value": "LED headlight, turn signals and taillight", "sourceId": "honda-2026-features", "verification": "2026-oem-verified" }
+        {
+          "label": "Lighting",
+          "value": "LED headlight, turn signals and taillight",
+          "sourceId": "honda-2026-features",
+          "verification": "2026-oem-verified"
+        }
       ],
-      "keywords": ["lights", "LED"]
+      "keywords": [
+        "lights",
+        "LED"
+      ]
     },
     {
       "id": "headlight",
       "name": "Headlight (LED)",
       "kind": "part",
       "parentId": "lighting",
-      "description": "A round LED headlight. The standard model has no headlight cowl; the color-matched cowl is an SE-only feature.",
+      "description": "A round LED headlight with four projector modules arranged in a 2×2 grid behind a clear lens, as seen in Honda's 2026 photos. It sits between the fork legs. The standard model has no headlight cowl; the color-matched cowl is an SE-only feature.",
       "function": "Provides low- and high-beam illumination.",
       "verification": "2026-oem-verified",
       "sourceId": "honda-2026-features",
       "geometryAccuracy": "representative",
-      "geometryIds": ["geo-headlight"],
+      "geometryIds": [
+        "geo-headlight"
+      ],
       "oem": {
         "ficheName": "HEADLIGHT",
         "partNumber": "33100-K87-A31",
@@ -59,7 +76,11 @@
         "sourceId": "revzilla-2026-abs-headlight",
         "note": "Headlight assembly (maker KOITO) on 2026 Rebel 500 ABS (CMX500AAC) diagram F820408, read via search index and corroborated by a second query. Confirm on the linked fiche."
       },
-      "keywords": ["headlamp", "LED headlight", "33100-K87-A31"]
+      "keywords": [
+        "headlamp",
+        "LED headlight",
+        "33100-K87-A31"
+      ]
     },
     {
       "id": "turn-signals",
@@ -71,8 +92,16 @@
       "verification": "2026-oem-verified",
       "sourceId": "honda-2026-features",
       "geometryAccuracy": "representative",
-      "oem": { "ficheName": "TURN SIGNAL", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
-      "keywords": ["blinker", "indicator", "winker"]
+      "oem": {
+        "ficheName": "TURN SIGNAL",
+        "verification": "cross-referenced",
+        "sourceId": "revzilla-2026-se-index"
+      },
+      "keywords": [
+        "blinker",
+        "indicator",
+        "winker"
+      ]
     },
     {
       "id": "front-turn-signals",
@@ -84,8 +113,12 @@
       "verification": "2026-oem-verified",
       "sourceId": "honda-2026-features",
       "geometryAccuracy": "representative",
-      "geometryIds": ["geo-front-turn-signals"],
-      "keywords": ["front blinker"]
+      "geometryIds": [
+        "geo-front-turn-signals"
+      ],
+      "keywords": [
+        "front blinker"
+      ]
     },
     {
       "id": "rear-turn-signals",
@@ -97,8 +130,12 @@
       "verification": "2026-oem-verified",
       "sourceId": "honda-2026-features",
       "geometryAccuracy": "representative",
-      "geometryIds": ["geo-rear-turn-signals"],
-      "keywords": ["rear blinker"]
+      "geometryIds": [
+        "geo-rear-turn-signals"
+      ],
+      "keywords": [
+        "rear blinker"
+      ]
     },
     {
       "id": "taillight",
@@ -110,9 +147,20 @@
       "verification": "2026-oem-verified",
       "sourceId": "honda-2026-features",
       "geometryAccuracy": "representative",
-      "geometryIds": ["geo-taillight"],
-      "oem": { "ficheName": "TAILLIGHT / LICENSE LIGHT", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index", "note": "The 2026 taillight part number was not recorded: one candidate number appeared only on Rebel 300 diagrams." },
-      "keywords": ["tail light", "brake light", "license light"]
+      "geometryIds": [
+        "geo-taillight"
+      ],
+      "oem": {
+        "ficheName": "TAILLIGHT / LICENSE LIGHT",
+        "verification": "cross-referenced",
+        "sourceId": "revzilla-2026-se-index",
+        "note": "The 2026 taillight part number was not recorded: one candidate number appeared only on Rebel 300 diagrams."
+      },
+      "keywords": [
+        "tail light",
+        "brake light",
+        "license light"
+      ]
     },
     {
       "id": "instrument-meter",
@@ -124,11 +172,24 @@
       "verification": "2026-oem-verified",
       "sourceId": "honda-2026-features",
       "geometryAccuracy": "representative",
-      "geometryIds": ["geo-meter"],
-      "facts": [
-        { "label": "Display", "value": "LCD with gear-position indicator and fuel consumption", "sourceId": "honda-2026-features", "verification": "2026-oem-verified" }
+      "geometryIds": [
+        "geo-meter"
       ],
-      "keywords": ["speedometer", "dash", "gauge", "instrument", "meter"]
+      "facts": [
+        {
+          "label": "Display",
+          "value": "LCD with gear-position indicator and fuel consumption",
+          "sourceId": "honda-2026-features",
+          "verification": "2026-oem-verified"
+        }
+      ],
+      "keywords": [
+        "speedometer",
+        "dash",
+        "gauge",
+        "instrument",
+        "meter"
+      ]
     },
     {
       "id": "ignition",
@@ -141,9 +202,17 @@
       "sourceId": "honda-2026-specs",
       "geometryAccuracy": "none",
       "facts": [
-        { "label": "Ignition", "value": "Fully transistorized", "sourceId": "honda-2026-specs", "verification": "2026-oem-verified" }
+        {
+          "label": "Ignition",
+          "value": "Fully transistorized",
+          "sourceId": "honda-2026-specs",
+          "verification": "2026-oem-verified"
+        }
       ],
-      "keywords": ["ignition", "spark"],
+      "keywords": [
+        "ignition",
+        "spark"
+      ],
       "educationId": "four-stroke"
     },
     {
@@ -156,8 +225,15 @@
       "verification": "cross-referenced",
       "sourceId": "revzilla-2026-se-index",
       "geometryAccuracy": "none",
-      "oem": { "ficheName": "IGNITION COIL", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
-      "keywords": ["coil", "stick coil"]
+      "oem": {
+        "ficheName": "IGNITION COIL",
+        "verification": "cross-referenced",
+        "sourceId": "revzilla-2026-se-index"
+      },
+      "keywords": [
+        "coil",
+        "stick coil"
+      ]
     },
     {
       "id": "spark-plugs",
@@ -169,8 +245,14 @@
       "verification": "unverified",
       "verificationNote": "Plug type, gap and torque are not yet verified for 2026 CMX500A. Consult the owner's manual or service manual 61MLH00.",
       "geometryAccuracy": "none",
-      "service": { "verified": false, "notes": "Torque specification not yet verified. Consult the Honda service manual (61MLH00)." },
-      "keywords": ["spark plug", "plug"]
+      "service": {
+        "verified": false,
+        "notes": "Torque specification not yet verified. Consult the Honda service manual (61MLH00)."
+      },
+      "keywords": [
+        "spark plug",
+        "plug"
+      ]
     },
     {
       "id": "charging",
@@ -182,7 +264,11 @@
       "verification": "cross-referenced",
       "sourceId": "revzilla-2026-se-index",
       "geometryAccuracy": "none",
-      "keywords": ["charging", "alternator", "stator"],
+      "keywords": [
+        "charging",
+        "alternator",
+        "stator"
+      ],
       "educationId": "charging"
     },
     {
@@ -195,9 +281,20 @@
       "verification": "cross-referenced",
       "sourceId": "revzilla-2026-se-index",
       "geometryAccuracy": "none",
-      "oem": { "ficheName": "GENERATOR", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
-      "relatedParts": ["alternator-cover"],
-      "keywords": ["alternator", "stator", "flywheel", "rotor"],
+      "oem": {
+        "ficheName": "GENERATOR",
+        "verification": "cross-referenced",
+        "sourceId": "revzilla-2026-se-index"
+      },
+      "relatedParts": [
+        "alternator-cover"
+      ],
+      "keywords": [
+        "alternator",
+        "stator",
+        "flywheel",
+        "rotor"
+      ],
       "educationId": "charging"
     },
     {
@@ -210,7 +307,11 @@
       "verification": "unverified",
       "verificationNote": "Not yet verified for 2026 CMX500A.",
       "geometryAccuracy": "none",
-      "keywords": ["regulator", "rectifier", "reg/rec"]
+      "keywords": [
+        "regulator",
+        "rectifier",
+        "reg/rec"
+      ]
     },
     {
       "id": "starter-motor",
@@ -223,9 +324,19 @@
       "sourceId": "honda-2026-specs",
       "verificationNote": "Honda's 2026 spec lists a push-button electric starter. Location and part number are not yet verified for 2026 CMX500A.",
       "geometryAccuracy": "none",
-      "oem": { "ficheName": "STARTER MOTOR", "verification": "cross-referenced", "sourceId": "revzilla-2026-se-index" },
-      "relatedParts": ["starting-clutch", "battery"],
-      "keywords": ["starter", "electric start"]
+      "oem": {
+        "ficheName": "STARTER MOTOR",
+        "verification": "cross-referenced",
+        "sourceId": "revzilla-2026-se-index"
+      },
+      "relatedParts": [
+        "starting-clutch",
+        "battery"
+      ],
+      "keywords": [
+        "starter",
+        "electric start"
+      ]
     },
     {
       "id": "ecu",
@@ -237,8 +348,16 @@
       "verification": "unverified",
       "verificationNote": "PGM-FI is Honda-confirmed. The control unit's location, name and part number are not yet verified for 2026 CMX500A.",
       "geometryAccuracy": "none",
-      "relatedParts": ["pgm-fi", "ignition"],
-      "keywords": ["ECU", "ECM", "computer", "PGM-FI"]
+      "relatedParts": [
+        "pgm-fi",
+        "ignition"
+      ],
+      "keywords": [
+        "ECU",
+        "ECM",
+        "computer",
+        "PGM-FI"
+      ]
     },
     {
       "id": "wiring-harness",
@@ -250,7 +369,12 @@
       "verification": "unverified",
       "verificationNote": "Electrical routing is not yet verified for 2026 CMX500A. Consult service manual 61MLH00 for wiring diagrams.",
       "geometryAccuracy": "none",
-      "keywords": ["harness", "wiring", "loom", "fuses"]
+      "keywords": [
+        "harness",
+        "wiring",
+        "loom",
+        "fuses"
+      ]
     }
   ]
 }

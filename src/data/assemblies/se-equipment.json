@@ -11,11 +11,11 @@
       "variants": [
         "cmx500a2"
       ],
-      "description": "A small color-matched fairing around the headlight, fitted at the factory to the SE. This is the 'front fairing'. Its shape in the 3D view is representative.",
+      "description": "A color-matched, rounded fairing that wraps the top and sides of the headlight, fitted at the factory to the SE. This is the 'front fairing'. In Honda's 2026 SE photos its front edge hugs the lens, the crown rises above the light with a small smoked screen set into the top, and the bottom is open. Its shape in the 3D view follows those photos but is representative.",
       "function": "Styling, plus a little wind deflection away from the rider's chest at speed.",
       "verification": "2026-oem-verified",
       "sourceId": "honda-2026-features",
-      "verificationNote": "Honda's 2026 features list 'a color-matched headlight cowl' on the SE. Shape, mounting and part numbers are not yet verified for 2026 CMX500A2.",
+      "verificationNote": "Honda's 2026 features list 'a color-matched headlight cowl' on the SE; the shape follows owner-supplied Honda photos. Mounting and part numbers are not yet verified for 2026 CMX500A2.",
       "geometryAccuracy": "representative",
       "geometryIds": [
         "geo-headlight-cowl"
@@ -46,7 +46,7 @@
       "variants": [
         "cmx500a2"
       ],
-      "description": "Black rubber gaiters (bellows) over the fork tubes, fitted at the factory to the SE.",
+      "description": "Black ribbed rubber gaiters (bellows) over the fork tubes, running from the top of each fork slider up to just below the bottom triple clamp. Fitted at the factory to the SE, as seen in Honda's 2026 SE photos.",
       "function": "Keep grit and stone chips off the chrome fork tubes and seals, and give the front end a vintage look.",
       "verification": "2026-oem-verified",
       "sourceId": "honda-2026-features",
